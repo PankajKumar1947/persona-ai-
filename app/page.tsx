@@ -23,6 +23,10 @@ export default function Home() {
     logEvent("System initialized. Ready for simulation.");
   }, []);
 
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
   const logEvent = (msg: string) => {
     const time = new Date().toLocaleTimeString();
     setSysLog((prev) => [`[${time}] ${msg}`, ...prev.slice(0, 15)]);
