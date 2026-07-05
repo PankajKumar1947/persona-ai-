@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d0f12;
+  --foreground: #e2e8f0;
+  
+  --bg-studio: #08090a;
+  --bg-sidebar: #0b0c0e;
+  --border-studio: #1e293b;
+
+  --hitesh-accent: #d97706;
+  --hitesh-bg-dim: #1e1c18;
+  --hitesh-text: #f59e0b;
+
+  --piyush-accent: #06b6d4;
+  --piyush-bg-dim: #111827;
+  --piyush-text: #22d3ee;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-bg-studio: var(--bg-studio);
+  --color-bg-sidebar: var(--bg-sidebar);
+  --color-border-studio: var(--border-studio);
+
+  --color-hitesh-accent: var(--hitesh-accent);
+  --color-hitesh-bg-dim: var(--hitesh-bg-dim);
+  --color-hitesh-text: var(--hitesh-text);
+
+  --color-piyush-accent: var(--piyush-accent);
+  --color-piyush-bg-dim: var(--piyush-bg-dim);
+  --color-piyush-text: var(--piyush-text);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-mono), monospace;
+}
